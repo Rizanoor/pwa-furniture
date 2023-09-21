@@ -16,7 +16,6 @@ function App() {
     (async function () {
       const response = await axios.get('https://jsonplaceholder.org/posts');
       setItems(response.data);
-      console.log(response.data);
     })();
     
   }, []);
